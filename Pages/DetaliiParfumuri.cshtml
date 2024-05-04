@@ -1,0 +1,120 @@
+﻿@page
+@model GaneShop.Pages.DetaliiParfumuriModel
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalii Parfumuri</title>
+
+    <style>
+       
+        body {
+            background-color: #f8f9fa;
+        }
+
+        h2 {
+            font-size: 28px;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            background-color: blueviolet;
+            border-radius: 8px;
+        }
+
+        .row {
+            margin-bottom: 15px;
+        }
+
+        .col-md-3 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-warning {
+            background-color: #ffc107;
+            color: #212529;
+            border-color: #ffc107;
+        }
+
+        .btn-warning:hover {
+            background-color: #ffca2c;
+            color: #212529;
+            border-color: #ffca2c;
+        }
+
+        h4 {
+            font-size: 18px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 class="rounded text-center text-white p-2">Detalii Parfumuri</h2>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="my-2 text-center sticky-top" style="top:10px;">
+            <img src="/images/Parfumuri/@Model.ParfumuriInfo.imagine" class="img-fluid rounded" alt="....">
+            <button type="button" class="btn btn-warning btn-sm my-2" onclick="AdaugaInCos(this, @Model.ParfumuriInfo.ID)">Pune in cos <i class="bi bi-bag-heart"></i></button>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <h4> Numele Produsului </h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>@Model.ParfumuriInfo.Title</h4>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <h4>Codul Produsului</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>@Model.ParfumuriInfo.Cod_Parfum</h4>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <h4>Pretul</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>@(Model.ParfumuriInfo.Pret) € </h4>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <h4>Descrierea produsului</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>@Model.ParfumuriInfo.Descriere</h4>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <h4>Categoria</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>@Model.ParfumuriInfo.categorie</h4>
+                </div>
+            </div>
+     
+
+        </div>
+    </div>
+
+</body>
+</html>

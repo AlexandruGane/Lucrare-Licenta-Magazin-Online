@@ -1,0 +1,112 @@
+﻿@page
+@model GaneShop.Pages.ProfileModel
+@{
+    string? currentFirstname = HttpContext.Session.GetString("firstname");
+    string? currentLastname = HttpContext.Session.GetString("lastname");
+    string? currentEmail = HttpContext.Session.GetString("email");
+    string? currentPhone = HttpContext.Session.GetString("phone");
+    string? currentAddress = HttpContext.Session.GetString("address");
+    string? currentRole = HttpContext.Session.GetString("role");
+    string? currentCreatedAt = HttpContext.Session.GetString("created_at");
+}
+
+        @if(Model.MesajEronat.Length>0)
+                {
+                <div class= 'alert  alert-warning alert-dismissible fade show' role='alert'>
+                <strong>@Model.MesajEronat</strong>
+                <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'> </button>
+                </div>
+                }
+                
+
+        else if(Model.MesajBun.Length>0)
+                {
+                    <div class= 'alert  alert-success alert-dismissible fade show' role='alert'>
+                    <strong>@Model.MesajBun</strong>
+                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'> </button>
+                    </div>
+                }
+
+<style>
+    /* Stiluri CSS */
+
+    h2 {
+        color: #007BFF; /* culoare albastră pentru titlu */
+        font-size: 24px; /* dimensiune font pentru titlu */
+    }
+
+    .profile-container {
+        background-color:#F5FFFA ; /* culoare portocalie pentru fundalul containerului */
+        padding: 20px; /* spațiu în interiorul containerului */
+        border-radius: 10px; /* colțuri rotunjite */
+    }
+
+    .row {
+        margin-bottom: 10px; /* spațiere între rânduri */
+    }
+
+    .col-sm-3 {
+        font-weight: bold; /* text bold pentru etichetele coloanelor de 3 */
+    }
+
+    .form-control-plaintext {
+        border: none; /* elimină bordura input-urilor readonly */
+        padding: 0; /* elimină padding-ul implicit */
+        background-color: #ffffff; /* culoare fundal input */
+    }
+</style>
+
+<div class="profile-container">
+    <h2 class="my-3">Profilul</h2>
+
+    <div class="row mb-2">
+        <label class="col-sm-3 col-form-label">Numele</label>
+        <div class="col-sm-8">
+            <input type="text" readonly class="form-control-plaintext" value="@currentFirstname">
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <label class="col-sm-3 col-form-label">Prenumele</label>
+        <div class="col-sm-8">
+            <input type="text" readonly class="form-control-plaintext" value="@currentLastname">
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <label class="col-sm-3 col-form-label">Email</label>
+        <div class="col-sm-8">
+            <input type="text" readonly class="form-control-plaintext" value="@currentEmail">
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <label class="col-sm-3 col-form-label">Numarul de telefon</label>
+        <div class="col-sm-8">
+            <input type="text" readonly class="form-control-plaintext" value="@currentPhone">
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <label class="col-sm-3 col-form-label">Adresa</label>
+        <div class="col-sm-8">
+            <input type="text" readonly class="form-control-plaintext" value="@currentAddress">
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <label class="col-sm-3 col-form-label">Functia</label>
+        <div class="col-sm-8">
+            <input type="text" readonly class="form-control-plaintext" value="@currentRole">
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <label class="col-sm-3 col-form-label">Data</label>
+        <div class="col-sm-8">
+            <input type="text" readonly class="form-control-plaintext" value="@currentCreatedAt">
+        </div>
+    </div>
+</div>
+
+

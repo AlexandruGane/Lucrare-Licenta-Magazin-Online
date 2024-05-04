@@ -1,0 +1,97 @@
+﻿@page
+@model GaneShop.Pages.Auth.RegisterModel
+@{
+}
+
+<style>
+    /* Stil pentru butonul de logare cu culoare verde */
+    .btn-login {
+        background-color: #28a745; /* Culoarea verde (poti ajusta codul culorii dupa preferinte) */
+        color: #fff; /* Culoarea textului */
+        border-color: #28a745; /* Culoarea marginii butonului */
+    }
+
+    /* La hover, schimbăm puțin culoarea */
+    .btn-login:hover {
+        background-color: #218838; /* O nuanță mai închisă la hover */
+        border-color: #1e7e34; /* O nuanță mai închisă a marginii la hover */
+    }
+</style>
+
+<div class="container-fluid position-relative" style="padding: 0;">
+    <img src="~/images/Parfumuri/pexels-mehmet-turgut-kirkgoz-6170683.jpg" style="width: 150vw; height: 100vh; object-fit: cover; position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: -1; opacity: 0.9;" alt="Imagine de fundal">
+    <div class="row justify-content-center align-items-center" style="height: 100vh;">
+        <div class="col-md-6"> <!-- Dimensiunea coloanei redusă la 6 -->
+            <div class="card mx-auto" style="max-width: 500px;">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">Creaza un cont nou</h2>
+
+                    @if(Model.errorMessage.Length > 0)
+                    {
+                        <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+                            <strong>@Model.errorMessage</strong>
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                        </div>
+                    }
+                    else if(Model.successMessage.Length > 0)
+                    {
+                        <div class='alert alert-success alert-dismissible fade show' role='alert'>
+                            <strong>@Model.successMessage</strong>
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                        </div>
+                    }
+
+                    <form method="post">
+
+                        <div class="mb-3">
+                            <label class="form-label">Numele</label>
+                            <input class="form-control" asp-for="FirstName" />
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Prenumele</label>
+                            <input class="form-control" asp-for="LastName" />
+                            <span asp-validation-for="LastName" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email-ul</label>
+                            <input class="form-control" asp-for="Email" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Telefonul</label>
+                            <input class="form-control" asp-for="Phone" />
+                            <span asp-validation-for="Phone" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Adresa</label>
+                            <input class="form-control" asp-for="Address" />
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Parola</label>
+                            <input class="form-control" type="password" asp-for="Password" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Confirmare Parola</label>
+                            <input class="form-control" type="password" asp-for="ConfirmPassword" />
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-login">Trimitere</button>
+                            <a class="btn btn-secondary mt-2" href="/" role="button">Inchidere</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

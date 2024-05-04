@@ -1,0 +1,119 @@
+﻿@page
+@model GaneShop.Pages.ContactModel
+@{
+}
+
+<style>
+    /* Stiluri pentru formularul de contact */
+    .contact-form-container {
+        background-color: #ffffff; /* Culorea fundalului */
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .contact-form-container h3 {
+        color: #556B2F; /* Culoarea titlului */
+    }
+
+    .contact-form-container label {
+        color: #343a40; /* Culoarea textului etichetelor */
+    }
+
+    /* Stiluri pentru butonul de trimitere */
+    .contact-form-container button {
+        background-color: #28a745; /* Culoarea de fundal a butonului */
+        color: #fff; /* Culoarea textului butonului */
+    }
+
+    .contact-form-container button:hover {
+        background-color: #218838; /* Culoarea la hover pentru buton */
+    }
+
+    /* Imagine decorativă */
+    .decorative-image {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<div class="row">
+    <div class="col-lg-8 mx-auto p-3 contact-form-container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <h3 class="mb-3 font-weight-normal text-center pb-4">Formular de tip contact</h3>
+
+                @if(Model.MesajEronat.Length > 0) 
+                {
+                    <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+                        <strong style='color: red;'>@Model.MesajEronat 😞 </strong>
+                        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>
+                }
+                else if (Model.MesajBun.Length > 0)
+                {
+                    <div class='alert alert-success alert-dismissible fade show' role='alert'>
+                        <strong>@Model.MesajBun !😊 </strong>
+                        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>
+                }
+
+                <form method="post">
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label" asp-for="Numele"></label>
+                        <div class="col-sm-8">
+                            <input class="form-control" asp-for="Numele">
+                            <span asp-validation-for="Numele" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label" asp-for="Prenumele"></label>
+                        <div class="col-sm-8">
+                            <input class="form-control" asp-for="Prenumele">
+                            <span asp-validation-for="Prenumele" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label" asp-for="Email"></label>
+                        <div class="col-sm-8">
+                            <input class="form-control" asp-for="Email">
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label" asp-for="Telefon"></label>
+                        <div class="col-sm-8">
+                            <input class="form-control" asp-for="Telefon">
+                            <span asp-validation-for="Telefon" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label" asp-for="Subiectul"></label>
+                        <div class="col-sm-8">
+                            <select class="form-select" asp-for="Subiectul" asp-items="Model.ListaSubiect">
+                            </select>
+                            <span asp-validation-for="Subiectul" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label" asp-for="Mesaj"></label>
+                        <div class="col-sm-8">
+                            <textarea class="form-control" asp-for="Mesaj"></textarea>
+                            <span asp-validation-for="Mesaj" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="offset-sm-4" col-sm-8>  
+                            <button type="submit" class="btn btn-primary">Apasa aici</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

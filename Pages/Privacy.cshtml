@@ -1,0 +1,166 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "CV-UL Developerului";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+
+    <!-- Adaugă link-uri către biblioteci de fonturi și stilizare (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #556B2F;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .contact-info:hover {
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>@ViewData["Title"]</h1>
+
+    <!-- Imaginea cu posibilitatea de schimbare -->
+    <img src="/images/Parfumuri/Alex.jpg" id="profileImage" alt="Poza cu Developerul" style="width: 300px; height: 300px;" onclick="changeProfileImage()">
+
+    <p>
+        <strong>Date Personale:</strong><br>
+        Nume: Gane Alexandru Valentin<br>
+        Educație: Cibernetică Economică, Universitatea București
+    </p>
+
+    <p>
+        <strong>Obiectiv Profesional:</strong><br>
+        Sunt un programator junior cu o viitoare diplomă în Cibernetică Economică și o pasiune pentru domeniul IT și aspectele economice. Îmi propun să-mi extind cunoștințele și să obțin o licență în domeniul IT, contribuind activ la proiecte complexe și dezvoltându-mă profesional.
+    </p>
+
+    <p>
+        <strong>Competențe Tehnice:</strong><br>
+        Limbaje de Programare: 
+        <i class="fab fa-html5"></i> HTML, 
+        <i class="fab fa-css3"></i> CSS, 
+        <i class="fab fa-bootstrap"></i> Bootstrap, 
+        <i class="fas fa-database"></i> SQL, 
+        <i class="fab fa-windows"></i> C#, 
+        Limbajul R<br>
+        Instrumente și Platforme: 
+        <i class="fab fa-r-project"></i> RStudio, 
+        <i class="fas fa-database"></i> Microsoft SQL Server, 
+        <i class="fab fa-microsoft"></i> Microsoft Visual Studio<br>
+        Cunoștințe de Statistică<br>
+        Aptitudini în Matematică
+    </p>
+
+    <p>
+        <strong>Experiență Profesională:</strong><br>
+        Junior FULL STACK Developer HTSS (Stagiu de practică)<br>
+        Junior Database Administrator SETRIO (Internship de vară)
+    </p>
+
+    <p>
+        <strong>Realizări:</strong><br>
+        Voluntar activ Proedus (Primaria Capitalei Bucuresti)<br>
+        Voluntar activ ASAA (ASOCIATA STUDENTILOR ADMINISTRATIE SI AFACERI)<br>
+        Permis de utilizare a calculatorului: ECDL<br>
+        Atestat Tehnician în activități economice<br>
+        Permis de conducere Categoria B<br>
+        Medie Bacalaureat: 9.20<br>
+        Medie Admitere Universitate: 9.42<br>
+        Medie Cibernetica Economica anul I: 9.00<br>
+        Medie Cibernetica Economica anul II: 9.35
+    </p>
+
+    <p>
+        <strong>Activități Extra-Profesionale:</strong><br>
+        În timpul liber, îmi place să socializez cu prietenii și să practic biliardul. Am obținut locul 2 la Competiția de Biliard, Universitatea București.
+    </p>
+
+    <p>
+        <strong>Obiective Future:</strong><br>
+        Doresc să-mi dezvolt abilitățile în programare și să contribui la proiecte inovatoare în domeniul IT, combinând cunoștințele tehnice cu înțelegerea proceselor economice.
+    </p>
+
+    <p>
+        <strong>Abilități Personale:</strong><br>
+        - Comunicare Eficientă<br>
+        - Lucru în Echipă<br>
+        - Rezolvare Probleme<br>
+        - Adaptabilitate
+    </p>
+
+    <p>
+        <strong>Contactare:</strong><br>
+        Numărul de telefon: <span class="contact-info" onmouseover="highlightContactInfo(this)" onmouseout="unhighlightContactInfo(this)">0771700593 📲</span> <br>
+<a href="#" onclick="openLinkedInProfile()">LinkedIn💻</a> <br > 
+        <a href="#" onclick="openFacebookProfile()">Facebook💻</a> <br >
+        <a href="#" onclick="openInstagramProfile()">Instagram💻</a> <br >
+    </p>
+
+    <script>
+        var imageCounter = 0;
+        var imageSources = [
+            "/images/Parfumuri/Alex.jpg", // Poza existentă
+            "/images/Parfumuri/h1.jpg",
+            "/images/Parfumuri/h2.jpg",
+            "/images/Parfumuri/h3.jpg",
+            "/images/Parfumuri/h4.jpg",
+            "/images/Parfumuri/h5.jpg",
+            "/images/Parfumuri/h6.jpg",
+           "/images/Parfumuri/h7.jpg"
+            
+
+
+
+
+
+        ];
+
+        function changeProfileImage() {
+            imageCounter = (imageCounter + 1) % imageSources.length;
+            document.getElementById("profileImage").src = imageSources[imageCounter];
+        }
+
+        function highlightContactInfo(element) {
+            element.style.color = 'red';
+        }
+
+        function unhighlightContactInfo(element) {
+            element.style.color = '';
+        }
+
+        function openLinkedInProfile() {
+            var linkedinURL = "https://www.linkedin.com/in/gane-alexandru-valentin-837030270/";
+            window.open(linkedinURL, '_blank');
+        }
+
+        function openFacebookProfile() {
+            var facebookURL = "https://www.facebook.com/alex.gane.7?locale=ro_RO";
+            window.open(facebookURL, '_blank');
+        }
+
+        function openInstagramProfile() {
+            var instagramURL = "https://www.instagram.com/alexandru_gane_/";
+            window.open(instagramURL, '_blank');
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+﻿@page
+@model GaneShop.Pages.Admin.Parfumuri.CreateModel
+@{
+}
+
+<h2 class="my-3">Formular pentru adaugara de noi parfumuri</h2>
+
+@if (Model.errorMessage.Length > 0)
+{
+
+<div class= 'alert  alert-warning alert-dismissible fade show' role='alert'>
+<strong>@Model.errorMessage</strong>
+<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'> </button>
+</div>
+
+}
+
+
+else if(Model.succesMessage.Length>0)
+{
+
+<div class= 'alert  alert-success alert-dismissible fade show' role='alert'>
+<strong>@Model.succesMessage</strong>
+<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'> </button>
+</div>
+
+}
+
+<form method="POST" enctype="multipart/form-data">
+
+    <div class="row mb-1">
+    <label class="col-sm-3 col-form-label">Title</label>
+    <div class="col-sm-3">
+       <input class="form-control" asp-for="Title"/>
+       <span asp-validation-for="Title" class="text-danger"></span>
+     </div>
+    </div>
+
+
+    <div class="row mb-1">
+    <label class="col-sm-3 col-form-label">Cod_parfum</label>
+    <div class="col-sm-3">
+       <input class="form-control" asp-for="Cod_Parfum"/>
+       <span asp-validation-for="Cod_Parfum" class="text-danger"></span>
+     </div>
+    </div>
+
+     <div class="row mb-1">
+    <label class="col-sm-3 col-form-label">Pret  </label>
+    <div class="col-sm-3">
+       <input class="form-control" asp-for="Pret"/>
+       <span asp-validation-for="Pret" class="text-danger"></span>
+     </div>
+    </div>
+
+    
+    <div class="row mb-1">
+    <label class="col-sm-3 col-form-label">Descriere</label>
+    <div class="col-sm-3">
+       <textarea class="form-control" asp-for="Descriere"></textarea>
+       <span asp-validation-for="Descriere" class="text-danger"></span>
+     </div>
+    </div>
+
+
+    <div class="row mb-1">
+    <label class="col-sm-3 col-form-label">categorie</label>
+    <div class="col-sm-3">
+       <select class="form-select" asp-for="categorie">
+           <option value='Apa de toaleta'>Apa de toaleta</option>
+           <option value='Apa de parfum'>Apa de parfum</option>
+       </select>
+       <span asp-validation-for="categorie" class="text-danger"></span>
+         </div>
+       </div>
+
+
+     <div class="row mb-1">
+    <label class="col-sm-3 col-form-label">imagine</label>
+    <div class="col-sm-3">
+       <input class="form-control" asp-for="imagine"/>
+       <span asp-validation-for="imagine" class="text-danger"></span>
+     </div>
+    </div>
+ 
+
+    <div class="row mb-3">
+        <div class="offset-sm-4 col-sm-4 d-grid"> 
+            <button type="submit" class="btn btn-primary">Trimitere</button>
+        </div>
+        <div class="col-sm-3 d-grid">
+            <a class=" btn btn-outline-primary" href="/Admin/Parfumuri/Index" role="button">Inchidere</a>
+
+        </div>
+    </div>
+
+</form>

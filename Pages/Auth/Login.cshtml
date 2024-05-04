@@ -1,0 +1,76 @@
+﻿@page
+@model GaneShop.Pages.Auth.LoginModel
+@{
+}
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+    /* Stiluri personalizate */
+    .card {
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+        padding: 30px;
+    }
+
+    .btn-primary {
+        background-color: #28a745; /* culoare verde */
+        border-color: #28a745;
+    }
+
+    .btn-primary:hover {
+        background-color: #218838; /* o nuanță mai închisă la hover */
+        border-color: #1e7e34;
+    }
+</style>
+
+
+<div class="container-fluid position-relative" style="padding: 0;">
+    <img src="~/images/Parfumuri/Belgalez.jpg" style="width: 150vw; height: 100vh; object-fit: cover; position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: -1; opacity: 0.9;" alt="Imagine de fundal">
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="card mx-auto" style="max-width: 500px;">
+
+        <div class="card-body">
+            <h2 class="text-center mb-5">GaneShop 🫵🏻</h2>
+            <p class="text-center mb-4"><strong>„Parfumul este ca o paranteză, un moment de libertate, pace, dragoste și senzualitate în mijlocul problemelor vieții moderne.” –Sonia Rykiel</strong></p>
+            <div class="text-center mb-4">
+                @if(Model.MesajEronat.Length > 0)
+                {
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>@Model.MesajEronat</strong>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                }
+                else if(Model.MesajValidare.Length > 0)
+                {
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>@Model.MesajValidare</strong>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                }
+                <form method="post">
+                    <div class="form-group">
+                        <label for="Email">Introducere Email</label>
+                        <input type="email" class="form-control" id="Email" asp-for="Email">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Password">Introducere Parola</label>
+                        <input type="password" class="form-control" id="Password" asp-for="Password">
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Logare</button>
+                    <a class="btn btn-secondary btn-block mt-2" href="/">Inchidere</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

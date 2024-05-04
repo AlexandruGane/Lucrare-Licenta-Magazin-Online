@@ -1,0 +1,77 @@
+﻿@page
+@model GaneShop.Pages.ParfumuriModel
+@{
+}
+
+<style>
+    h2.rounded:hover {
+        background-color:  #00008B !important; 
+    }
+
+    .rounded:hover {
+        background-color: #00008B !important;
+    }
+
+   .btn-mov {
+    background-color: #556B2F !important; 
+    color: #ffffff !important;
+    
+}
+
+
+</style>
+
+<h2 class="rounded text-center text-white p-2" style="background-color: #556B2F;">Parfumuri disponibile </h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="rounded text-white my-2 p-3 sticky-top" style="background-color:#556B2F; top:10px;">
+            <h4 class="mb-3">Filtru Parfumuri</h4>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Cauta</label>
+                    <input type="text" class="form-control" asp-for="Cauta" placeholder="Cauta dupa brand" />
+                </div>
+
+                <div class="row">
+                    <div class="col d-grid">
+                        <button type="submit" class="btn btn-primary">Cauta</button>
+                    </div>
+                    <div class="col d-grid">
+                       
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <table class="table align-middle">
+            <tbody>
+                @foreach(var item in Model.listParfumuri)
+                {
+                    <tr>
+                    <td style="width:200px">
+                        <img src="~/images/Parfumuri/@item.imagine" class="img-fluid rounded" alt="...." />
+                    </td>
+                    <td>
+                        <h3>@item.Title</h3>
+                        <p>
+                            Categorie:@item.categorie<br>
+                        </p>
+                        <h4>(@item.Pret)€</h4>
+                        <a class="btn btn-primary btn-sm my-2" href="/DetaliiParfumuri?id=@(item.ID)" role="button">Detalii</a>
+                        <button type="button" class="btn btn-mov btn-sm my-2" onclick="AdaugaInCos(this,@item.ID)">
+                        Pune in cos <i class="bi bi-bag-heart"></i>
+                         </button>
+                    </td>
+                </tr>
+                }
+                
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
+

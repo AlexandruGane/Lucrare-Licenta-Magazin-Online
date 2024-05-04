@@ -1,0 +1,137 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    ViewData["NoContainer"] = true;
+}
+
+<style>
+.Parfumuri_intrari img {
+    width:100%;
+    height:260px;
+    object-fit:contain;
+    background:radial-gradient(white 50%, #00008B )
+}
+
+.Parfumuri_intrari
+{
+    transition:all 0.3s ease;
+}
+
+.Parfumuri_intrari:hover{
+        transform:scale(1.05);
+}
+
+.animated-text {
+        display: inline-block;
+        opacity: 0;
+        transform: translateX(-20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .text-container:hover .animated-text {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .col-md-6 img {
+        transition: transform 0.3s ease;
+    }
+
+    .col-md-6:hover img {
+        transform: scale(1.1); 
+    }
+
+   
+    .col-md-6 img:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+
+</style>
+
+<!--prima parte din interfata-->
+
+<div class="py-5" style="background-color: #556B2F">
+    <div class="container text-white">
+        <div class="row text-container">
+            <div class="col-md-6 pb-3" >
+                <h1 class="animated-text"><strong> GaneShop</strong></h1>
+                <br/>
+                <p class="animated-text">
+                 Bun venit pe GaneShop – destinația ta online pentru a descoperi aromele luxului autentic! Aici, fiecare strop de parfum este o promisiune de eleganță și rafinament.
+
+Explorând colecția noastră selectă, vei găsi parfumuri de la cele mai prestigioase case, garantându-ți o experiență olfactivă de neuitat. Fie că îți dorești prospetime pentru zilele de vară sau senzualitate pentru serile speciale, GaneShop îți oferă acces la arome care îți definesc personalitatea.
+
+Aici, nu vindem doar parfumuri – oferim povești olfactive care transformă fiecare moment într-un capitol memorabil al vieții tale. Descoperă luxul autentic la doar un clic distanță, unde parfumul devine expresia ta personală. GaneShop - unde fiecare strop de parfum spune o poveste!
+
+
+
+                </p>
+                <br/>
+                     <form class="d-flex" action="/Parfumuri">
+                     <input class="form-control me-2" name="search" placeholder="Sa incepem aventura">
+                     <button class="btn btn-outline-light" type="submit">Cautare</button>
+                     </form>
+            </div>
+             <div class="col-md-6">
+                 <img src="/images/Parfumuri/tigru.jpg" class="img-fluid rounded" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--a doua parte din interfata-->
+<div class="py-5">
+    <div class="container">
+        <h1 class="pb-5 text-center display-5"><strong>Parfumuri noi</strong></h1>
+        <div class="row">
+            @foreach(var item in Model.listnoiParfumuri)
+            {
+                <div class="col-lg-3 col-sm-6 my-2">
+                    <div class="card shadow text-center h-100 Parfumuri_intrari">
+                        <img src="/images/Parfumuri/@item.imagine" class="card-img-top p-3" alt="...."/>
+                        <div class="card-body">
+                            <h4>@item.Title</h4>
+                            <p>Cod_parfum:@item.Cod_Parfum,Descriere:@item.Descriere</p>
+                            <h4>@(item.Pret) €</h4>
+                            <a class="btn btn-primary btn-sm my-2" href="/DetaliiParfumuri?id=@(item.ID)" role="button">Detalii</a>
+                            <button type="button" class="btn btn-warning btn-sm my-2" onclick="AdaugaInCos(this,@item.ID)">
+                                Pune in cos <i class="bi bi-bag-heart"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- a treia parte a aplicatiei-->
+
+<div class="py-5" style="background-color:#556B2F">
+    <div class="container">
+        <h1 class="pb-5 text-center display-5"><strong>Gama de lux</strong></h1>
+        <div class="row">
+            @foreach(var item in Model.listGamaLux)
+            {
+                <div class="col-lg-3 col-sm-6 my-2">
+                    <div class="card shadow text-center h-100 Parfumuri_intrari">
+                        <img src="/images/Parfumuri/@item.imagine" class="card-img-top p-3" alt="...."/>
+                        <div class="card-body">
+                            <h4>@item.Title</h4>
+                            <p>Cod_parfum:@item.Cod_Parfum,Descriere:@item.Descriere</p>
+                            <h4>@(item.Pret) €</h4>
+                            <a class="btn btn-primary btn-sm my-2" href="/DetaliiParfumuri?id=@(item.ID)" role="button">Detalii</a>
+                            <button type="button" class="btn btn-warning btn-sm my-2" onclick="AdaugaInCos(this,@item.ID)">
+                                Pune in cos <i class="bi bi-bag-heart"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+            }
+        </div>
+    </div>
+</div>
+
+

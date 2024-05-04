@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - GaneShop</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/GaneShop.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    
+</head>
+
+<style>
+   .btn-mov {
+    background-color: #8a2be2 !important; 
+    color: #ffffff !important;
+
+}
+</style>
+
+<script>
+
+    function AdaugaInCos(buton, ParfumID) {
+        let VecheValoareAdauga = daValoareaCookie("magazin_cart");
+        if (VecheValoareAdauga) VecheValoareAdauga += "-";
+        let nouaValoareAdauga = VecheValoareAdauga + ParfumID;
+
+        let data = new Date();
+        data.setDate(data.getDate() + 365);
+        let expirare = data.toUTCString();
+        document.cookie = "magazin_cart=" + nouaValoareAdauga + "; expires=" + expirare + "; path=/";
+
+        let ParfumuriMatrice = nouaValoareAdauga.split("-");
+        let numara = ParfumuriMatrice.length;
+
+        document.getElementById("Parfumuri_numaratoare").innerHTML = numara;
+
+        buton.innerHTML = "Added <i class='bi bi-check-circle-fill'></i>";
+    }
+
+   function daValoareaCookie(cookieNume) {
+    let cookiesMatrice = document.cookie.split(';');
+    for (let i = 0; i < cookiesMatrice.length; i++) {
+        let cookie = cookiesMatrice[i];
+        if (cookie.includes(cookieNume)) {
+            let name_value = cookie.split('=');
+            return name_value[1];
+        }
+    }
+    return "";
+}
+
+ </script>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">GaneShop
+                     
+</a>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Acasa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Parfumuri">Parfumuri</a>
+                        </li>
+                        
+
+                        <li class="nav-item">
+
+                             <a class="nav-link text-dark" asp-area="" asp-page="/Contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Autor</a>
+                        </li>
+                        </ul>
+                    @{
+                        string cookieValoare = Context.Request.Cookies["magazin_cart"] ?? "";
+                        int magazin_cartSize = 0;
+                        if (cookieValoare.Length > 0)
+                        {
+                            magazin_cartSize = cookieValoare.Split('-').Length;
+                        }
+                    }
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="nav-link text-dark me-4" asp-area="" asp-page="/Card">
+                                <i class="bi bi-cart4 text-success h4"></i>  
+                               <span id="Parfumuri_numaratoare" class="badge rounded-pill bg-success" style="vertical-align:top;">@magazin_cartSize</span>
+                            </a>
+                        </li>
+                        </ul>
+                    <ul class="navbar-nav">
+
+                    @if (Context.Session.GetString("role") == null)
+                    {
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary me-2" asp-area="" asp-page="/Auth/Register">Inregistrare</a>
+                        </li>   
+
+                        <li class="nav-item">
+                         <a class="btn" style="background-color: #00008B; color: #ffffff;" asp-area="" asp-page="/Auth/Login">Autentificare</a>
+                        </li>
+
+                    }
+                    else if (Context.Session.GetString("role").Equals("admin"))
+                    {
+
+                  <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Admin
+                     </a>
+       <ul class="dropdown-menu">
+    <li><a class="dropdown-item" asp-page="/Admin/Messages/Index">Messages</a></li>
+    <li><a class="dropdown-item" asp-page="/Admin/Parfumuri/Index">Parfumuri</a></li>
+    <li><a class="dropdown-item" asp-page="/Admin/Comenzi/Index">Comenzi</a></li>
+    <li><a class="dropdown-item" asp-page="/Profile">Profile</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" asp-area="" asp-page="/Auth/Deconectare">Deconectare</a></li>
+</ul>
+        </li>
+                    }
+
+
+                    else if (Context.Session.GetString("role").Equals("client"))
+                    {
+
+            <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+       Client
+    </a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" asp-area="" asp-page="/Index">Home </a></li>
+        <li><a class="dropdown-item" asp-page="/Profile">Profile</a></li>
+        <li><a class="dropdown-item" asp-page="/Contact">Contact</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" asp-area="" asp-page="/Auth/Deconectare">Deconectare</a></li>
+    </ul>
+</li>
+
+                    }
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    @if(ViewData["NoContainer"]==null)
+    {
+          <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+        </div>
+    }
+    else
+    {
+        @RenderBody()
+    }
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - GaneShop - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

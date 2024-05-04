@@ -1,0 +1,85 @@
+﻿@page
+@model GaneShop.Pages.Admin.Messages.DetailsModel
+@{
+    <h2 class="my-3">Detalii despre mesaje</h2>
+
+    <div class="row mb-2">
+        <label class="col-sm-3 col-form-label">ID-ul celui care a completat formularul</label>
+        <div class="col-sm-7">
+            <input type="text" readonly class="form-control-plaintext" value="@Model.messageInfo.Id">
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <label class="col-sm-3 col-form-label">User-ul</label>
+        <div class="col-sm-7">
+            <input type="text" readonly class="form-control-plaintext" value="@Model.messageInfo.FirstName @Model.messageInfo.LastName">
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <label class="col-sm-3 col-form-label">Email</label>
+        <div class="col-sm-7">
+            <input type="text" readonly class="form-control-plaintext" value="@Model.messageInfo.Email">
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <label class="col-sm-3 col-form-label">Numarul de telefon</label>
+        <div class="col-sm-7">
+            <input type="text" readonly class="form-control-plaintext" value="@Model.messageInfo.Phone">
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <label class="col-sm-3 col-form-label">Subiectul completarii formularului</label>
+        <div class="col-sm-7">
+            <input type="text" readonly class="form-control-plaintext" value="@Model.messageInfo.Subject">
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <label class="col-sm-3 col-form-label">Mesajul</label>
+        <div class="col-sm-7">
+            <textarea readonly class="form-control">@Model.messageInfo.Message</textarea>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <label class="col-sm-3 col-form-label">CreateAt</label>
+        <div class="col-sm-7">
+            <input type="text" readonly class="form-control-plaintext" value="@Model.messageInfo.CreateAt">
+        </div>
+    </div>
+
+    <div class="offset-sm-3 col-sm-7">
+        <a class="btn btn-primary" href="/Admin/Messages/Index" role="button">OK</a>
+    </div>
+}
+
+<style>
+    
+    h2 {
+        color: #333;
+        font-size: 24px;
+    }
+
+    .row {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: #fff;
+    }
+</style>

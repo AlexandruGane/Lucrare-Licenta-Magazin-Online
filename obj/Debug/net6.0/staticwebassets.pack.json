@@ -1,0 +1,417 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GaneShop.bundle.scp.css",
+      "PackagePath": "staticwebassets\\GaneShop.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\css\\Style.css",
+      "PackagePath": "staticwebassets\\css\\Style.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\1.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\1648_179ae7f08f0656ad97a201d6d0ab9544.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\1648_179ae7f08f0656ad97a201d6d0ab9544.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\2.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\20231119164808472.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\20231119164808472.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\20231119164942849.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\20231119164942849.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\20231119165449844.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\20231119165449844.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\20231119170107153.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\20231119170107153.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\20231122122231718.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\20231122122231718.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\3.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\4.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\5.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\89.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\89.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\8fa99d08-8694-4901-933c-05f430962839.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\8fa99d08-8694-4901-933c-05f430962839.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\Alex.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\Alex.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\Belgalez.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\Belgalez.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\ToDo.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\ToDo.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\big-cele-mai-populare-marci-de-parfumuri-barbati.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\big-cele-mai-populare-marci-de-parfumuri-barbati.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\big-parfumuri-barbati-1576573184.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\big-parfumuri-barbati-1576573184.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\download.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\download.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\dwayne-johnson-2m8zae8z5bcoghpm.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\dwayne-johnson-2m8zae8z5bcoghpm.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\dwayne-johnson-fast-and-furious-wallpaper-preview.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\dwayne-johnson-fast-and-furious-wallpaper-preview.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\h1.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\h1.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\h2.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\h2.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\h3.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\h3.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\h4.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\h4.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\h5.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\h5.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\h6.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\h6.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\h7.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\h7.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\istockphoto-1218694103-612x612.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\istockphoto-1218694103-612x612.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\logo-color.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\logo-color.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\paco-rabanne-phantom-eau-de-toilette-pentru-barbati_.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\paco-rabanne-phantom-eau-de-toilette-pentru-barbati_.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\pexels-mehmet-turgut-kirkgoz-6170683.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\pexels-mehmet-turgut-kirkgoz-6170683.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\tigru.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\tigru.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\wallpaperflare.com_wallpaper (8).jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\wallpaperflare.com_wallpaper (8).jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\wallpaperflare.com_wallpaper (9).jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\wallpaperflare.com_wallpaper (9).jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\wp2107848.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\wp2107848.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\images\\Parfumuri\\wp2507889.jpg",
+      "PackagePath": "staticwebassets\\images\\Parfumuri\\wp2507889.jpg"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\TEST C#\\GaneShop\\GaneShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.GaneShop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.GaneShop.props",
+      "PackagePath": "build\\GaneShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.GaneShop.props",
+      "PackagePath": "buildMultiTargeting\\GaneShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.GaneShop.props",
+      "PackagePath": "buildTransitive\\GaneShop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,2 +1,0 @@
-# Magazin-Online
-Magazin Online
